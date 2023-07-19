@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+/* shared styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #ff42a5;
+  --secondary-color: #0b0223;
+  --shade-color: #534c64;
+}
+
+.primary-heading {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.secondary-heading {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text; /* googled this */
+  color: transparent;
+}
+.description {
+  color: var(--shade-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+.btn-primary {
+  padding: 20px 40px;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 48px;
+}
+.btn-secondary {
+  padding: 20px 40px;
+  background-color: #4ec5f7;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 48px;
+}
+
+/* navbar styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15rem;
+  height: 8.2rem;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo-div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--secondary-color);
+}
+nav ul li {
+  list-style: none;
+}
+.logo-text {
+  color: var(--secondary-color);
+  font-size: 45px;
+  font-weight: 700;
+}
+.g-text {
+  color: var(--primary-color);
+}
+.youtube-icon {
+  color: red;
+  width: 2rem;
+  height: 1.5rem;
+}
+.tiktok-icon {
+  color: black;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.youtube-icon,
+.tiktok-icon,
+.li-text {
+  margin-right: 8px;
+}
+.li-container {
+  display: flex;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 8px 12px;
+  align-items: center;
+}
+
+/* Banner Styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20rem;
+  margin-right: 8rem;
+  background-image: url("../images/Group\ 14.png");
+  background-repeat: no-repeat;
+  background-size: 55%;
+}
+.banner-feature {
+  padding: 9.25rem 0;
+}
+.heading-banner {
+  font-size: 84px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text; /* googled this */
+  color: transparent;
+}
+.feature-container {
+  margin: 1.5rem 0;
+}
+.feature {
+  display: flex;
+  gap: 6px;
+}
+.feature-text {
+  color: var(--shade-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+.banner-img {
+  width: 100%;
+}
+.btn-margin {
+  margin-right: 1.5rem;
+}
+/* We are gamer styles */
+.we-are-gamer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.we-are-gamer-content {
+  width: 32.5rem;
+  text-align: right;
+}
+.our-text {
+  color: #534c64;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.we-are-text {
+  margin: 1.5rem 0;
+}
+.unleash-head {
+  color: #534c64;
+  font-size: 32px;
+  font-weight: 700;
+}
+/* Online Game videos styles */
+.online-game-videos {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.online-game > h3 {
+  margin-bottom: 1.5rem;
+}
+.game-content-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.game-content {
+  width: 21.375rem;
+  text-align: start;
+  line-height: 1.2rem;
+}
+.game-content > p {
+  margin-top: 1.5rem;
+}
+
+.funny-text {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text; /* Googled This*/
+  color: transparent;
+}
+.hover-img {
+  transition: 0.3s;
+}
+
+.hover-img:hover {
+  border-radius: 16px;
+  filter: brightness(30%);
+  content: "Watch Now";
+}
+
+/* Play instantly styles */
+.play-instantly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  margin: 120px 0;
+}
+.play-instantly-content {
+  width: 25rem;
+}
+.play-instantly-content > h3 {
+  line-height: 60px;
+}
+.play-instantly-content > p {
+  line-height: 30px;
+}
+.play-text {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.instant-img .small {
+  border-radius: 8px;
+  position: relative;
+  left: 150px;
+  top: 75px;
+}
+
+/* Demo Games styles */
+.games-container {
+  margin-top: 15rem;
+  margin-bottom: 8rem;
+  gap: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.games {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+.games:hover {
+  border: 2px solid var(--primary-color);
+}
+.games:hover {
+  color: var(--primary-color);
+}
+
+.games:hover .gamescontainer {
+  gap: 8px;
+}
+.game-name {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+/* Footer styles */
+.footer {
+  height: 40rem;
+  background-color: #0b0223;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.footer-logo {
+  padding-top: 11rem;
+}
+.footer-logo-text {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+}
+.footer-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+.social-icon-footer {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.footer-text-sm {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 60px;
+}
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 4rem;
+}
+
+/* responsive design */
+/* small mobile device */
+@media screen and (max-width: 36rem) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36rem;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 45%;
+    margin-top: 4rem;
+    box-shadow: none;
+    gap: 2rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: none;
+    width: 800px;
+  }
+  .banner-img {
+    width: 100%;
+    height: 100%;
+  }
+  .banner-img {
+    width: 100%;
+    margin-left: 5rem;
+    justify-self: center;
+  }
+}
