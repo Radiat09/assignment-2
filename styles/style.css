@@ -172,70 +172,55 @@ nav ul li {
   font-weight: 700;
 }
 /* Online Game videos styles */
-.online-game-videos {
+.online-game {
   text-align: center;
-  margin-top: 120px;
+  margin: 120px 0;
 }
 
-.online-game > h3 {
-  margin-bottom: 1.5rem;
-}
-.game-content-container {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-top: 3rem;
-}
-.game-content {
-  width: 21.375rem;
-  text-align: start;
-  line-height: 1.2rem;
-  /* position: relative; */
-}
-.game-content > p {
-  margin-top: 1.5rem;
-}
-.icon-div {
-  /* position: absolute; */
+.game-img .img .watch-icon {
+  z-index: 99;
+  display: none;
+  position: absolute;
   top: 50%;
   left: 50%;
-}
-.game-content > .play-icon,
-.game-content > .watch-now {
-  display: block;
-  position: relative;
-  top: 40%;
-  text-align: center;
-}
-.game-content > .play-icon {
-  color: #fff;
-  width: 84px;
-  height: 84px;
-  top: 40%;
-  left: 40%;
-}
-.game-content > .watch-now {
+  transform: translate(-50%, -50%);
   font-size: 20px;
   font-weight: 600;
-  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: var(--primary-color);
+}
+.game-img .img .play-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: white;
 }
 
-.funny-text {
-  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
-  background-clip: text;
-  -webkit-background-clip: text; /* Googled This*/
-  color: transparent;
-}
-.hover-img {
-  transition: 0.3s;
+.game-img .img {
+  position: relative;
 }
 
-.hover-img:hover {
-  border-radius: 16px;
-  filter: brightness(30%);
+.game-img .img img {
+  filter: brightness(1);
+}
+.game-img:hover img {
+  filter: brightness(0.3);
+}
+.game-img:hover .watch-icon {
+  display: block;
+}
+
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.image-description {
+  width: 340px;
+}
+
+.game-img img {
+  margin: 48px 0 24px 0;
 }
 
 /* Play instantly styles */
@@ -401,31 +386,24 @@ nav ul li {
     margin-top: 4rem;
   }
 
-  .online-game-videos {
-    text-align: center;
-    margin-top: 120px;
+  .game-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .game-container img {
+    width: 100%;
+  }
+
+  .online-game {
     width: 800px;
+    margin-top: 50px;
     margin-left: 9rem;
   }
 
-  .online-game > h3 {
-    margin-bottom: 1.5rem;
-  }
-  .game-content-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 3rem;
-    width: 800px;
-  }
-  .game-content {
-    width: 21.375rem;
-    text-align: start;
-    line-height: 1.2rem;
-  }
-  .game-content > p {
-    margin-top: 1.5rem;
+  .game-img img {
+    /* margin: 48px 0 24px 0; */
+    width: 250px;
   }
 
   .play-instantly {
