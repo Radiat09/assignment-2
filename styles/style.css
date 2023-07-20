@@ -176,7 +176,12 @@ nav ul li {
   text-align: center;
   margin: 120px 0;
 }
-
+.funny-text {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 .game-img .img .watch-icon {
   z-index: 99;
   display: none;
