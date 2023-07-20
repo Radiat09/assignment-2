@@ -351,7 +351,7 @@ nav ul li {
     width: 800px;
   }
   .banner-feature {
-    margin-left: 9rem;
+    margin-left: 18rem;
   }
   .banner-img {
     margin-left: 5rem;
@@ -359,7 +359,7 @@ nav ul li {
 
   .we-are-gamer {
     flex-direction: column;
-    margin-left: 5rem;
+    margin-left: 8rem;
     width: 800px;
   }
   .we-are-gamer-content {
@@ -377,7 +377,7 @@ nav ul li {
     text-align: center;
     margin-top: 120px;
     width: 800px;
-    margin-left: 6rem;
+    margin-left: 9rem;
   }
 
   .online-game > h3 {
@@ -406,13 +406,22 @@ nav ul li {
     text-align: center;
     width: 800px;
     margin: 160px 0;
-    margin-left: 6rem;
+    margin-left: 9rem;
   }
+  .play-instantly-content {
+    margin-bottom: 80px;
+  }
+  .instant-img {
+    width: auto;
+    position: relative;
+  }
+
   .instant-img > .small {
     border-radius: 8px;
-    position: relative;
-    left: 150px;
-    top: 75px;
+    position: absolute;
+    left: -150px;
+    top: 390px;
+    margin-left: 110px;
   }
   /* issue */
 
